@@ -1,0 +1,32 @@
+{
+  "name": "npm",
+  "version": "1.0.0",
+  "description": "Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "mianmianguo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mianmianguo2020/Eat-Da-Burger-.git"
+  },
+  "keywords": [
+    "restaurant",
+    "app"
+  ],
+  "bugs": {
+    "url": "https://github.com/mianmianguo2020/Eat-Da-Burger-/issues"
+  },
+  "homepage": "https://github.com/mianmianguo2020/Eat-Da-Burger-#readme"
+}
