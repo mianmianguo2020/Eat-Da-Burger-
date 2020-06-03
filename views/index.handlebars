@@ -1,20 +1,19 @@
 <div class = 'container'>
 <div class = 'row'>
- 
+ <img src = "/asset/image/burgericon.png" alt="burger"/>
 
 </div>
 
 </div>
- <img src = "../public/asset/image/burgericon.png" />
+
 
 <h1>Burgers!</h1>
 
-<h2>Burgers!</h2>
 
 <ul>
   {{#each burgers}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
+    {{#unless devoured}}
+      {{> cats/cat-block devoured=true}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -23,25 +22,18 @@
 
 <ul>
   {{#each burgers}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
+    {{#if devoured}}
+      {{> cats/cat-block devoured=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>Add a Cat</h2>
+<h2>Add a Burger</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Cat Name:</label>
+    <label for="ca">Burger Name:</label>
     <input type="text" id="ca" name="name">
   </div>
-
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
+  <button type="submit">add</button>
 </form>
