@@ -1,19 +1,18 @@
-<div class = 'container'>
-<div class = 'row'>
- <img src = "/asset/image/burgericon.png" alt="burger"/>
-
+<div class='container'>
+  <div class='row'>
+    <img src="/asset/image/burgericon.png" alt="burger" />
+  </div>
 </div>
-
-</div>
-
 
 <h1>Burgers!</h1>
-
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> cats/cat-block devoured=true}}
+      <li>
+        {{burger_name}}
+        <button class="change-devoured" data-id="{{this.id}}">devour it!</button>
+      </li>
     {{/unless}}
   {{/each}}
 </ul>
@@ -23,7 +22,9 @@
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> cats/cat-block devoured=false}}
+      <li>
+        {{burger_name}}
+      </li>
     {{/if}}
   {{/each}}
 </ul>

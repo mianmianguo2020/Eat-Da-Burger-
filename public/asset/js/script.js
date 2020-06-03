@@ -2,19 +2,16 @@
 $(function() {
     $(".change-devoured").on("click", function(event) {
       var id = $(this).data("id");
-      var devoured = $(this).data("newsleep");
-  
       var devoured = {
-        sleepy: newSleep
+        devoured: true
       };
-  
       // Send the PUT request.
-      $.ajax("/api/cats/" + id, {
+      $.ajax("/api/devour/" + id, {
         type: "PUT",
-        data: newSleepState
+        data: devoured
       }).then(
         function() {
-          console.log("changed sleep to", newSleep);
+          console.log("put request made with data set to:" + devoured);
           // Reload the page to get the updated list
           location.reload();
         }
@@ -31,12 +28,12 @@ $(function() {
       };
   
       // Send the POST request.
-      $.ajax("/api/cats", {
+      $.ajax("/api/add", {
         type: "POST",
         data: burger
       }).then(
         function() {
-          console.log("created new burger");
+          console.log("created new burger:" + burger);
           // Reload the page to get the updated list
           location.reload();
         }
