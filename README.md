@@ -47,3 +47,29 @@ All the recommended files and directories from the steps above should look like 
     ├── index.handlebars
     └── layouts
         └── main.handlebars
+        
+        
+## Author: 
+mianmianguo
+
+## Table of Contents
+=====================
+* [Installation](#installation)
+* [License](#license)
+* [Usage](#usage)
+* [Questions](#questions)
+
+## Installation
+To install necessary dependencies, run the following command:<br>
+```
+npm install
+```
+
+## License
+MIT
+
+## Usage
+a restaurant app that lets users input the names of burgers they'd like to eat.
+
+## Questions
+if you have any questions please contact me directly at mianmiantea2016@gmail.com<br>
